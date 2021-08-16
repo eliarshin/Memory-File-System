@@ -1,4 +1,4 @@
-all: main.cpp sim_mem.h sim_mem.cpp
-	g++ main.cpp sim_mem.cpp -o main
-all-GDB: main.cpp sim_mem.h sim_mem.cpp
-	g++ -g main.cpp sim_mem.cpp -o main
+all: sim_mem.hh sim_mem.cpp main.cpp
+	g++ sim_mem.cpp main.cpp -o main
+all-GDB: sim_mem.hh sim_mem.cpp main.cpp
+	g++ -g sim_mem.cpp main.cpp -o main
